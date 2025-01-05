@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom - js </title>
+</head>
+<style>
+    button{
+        background-color: slategrey;
+        color: black;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px black;
+        margin: 90px;
+        padding: 4px 2px;
+    }
+</style>
+<script>
+    function changeHeading(){
+        let heading = document.getElementById("firstheading");
+        heading.style.color = 'blue';
+        heading.style.textAlign = 'center';
+        heading.style.fontVariant= 'small-caps';
+        let para1 = document.getElementById("para");
+        para1.style.border = ' 2px solid black';
+        para1.style.text ='arial';
+        para1.style.backgroundColor = 'grey';
+    // }
+    // function changeHeading(){
+        // let para1 = document.getElementById("para");
+        // para1.style.border = ' 2px solid black';
+    }
+
+</script>
+<body>
+    <h1 id="firstheading">My Second JS Dom</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, excepturi dignissimos? Vitae nisi, aspernatur, quod culpa voluptatibus enim rerum corrupti dolor laudantium, in ut. Qui magnam corporis adipisci nostrum veniam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, excepturi dignissimos? Vitae nisi, aspernatur, quod culpa voluptatibus enim rerum corrupti dolor laudantium, in ut. Qui magnam corporis adipisci nostrum veniam?</p>
+    <button onclick="changeHeading();">Click Me</button>
+
+    
+</body>
+</html>

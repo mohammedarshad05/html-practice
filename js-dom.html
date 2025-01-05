@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics</title>
+    <style>
+        p {
+            cursor: pointer;
+        }
+        img {
+            width: 200px;
+        }
+    </style>
+    <script>
+        function changeHeading() {
+            let heading = document.getElementById('mainHeading');
+            heading.style.color = 'red';
+            heading.style.border = '2px solid blue';
+            heading.style.textAlign = 'center';
+            heading.textContent = 'JavaScript changed me.. :(';
+        }
+        function changeImage() {
+            let image = document.getElementById('myImg');
+            image.src = 'img/dark.jpg';
+            // image.style.width = '500px';
+        }
+         
+    </script>
+</head>
+<body>
+    <h1 id="mainHeading">
+        JS Basics
+    </h1>
+    <p onclick="changeImage()">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur animi delectus vero quidem, iure saepe dicta ut inventore debitis est impedit, iste cumque aliquam sapiente vel aut temporibus cupiditate officiis!
+    </p>
+    <div>
+        <img id="myImg" src="img/kid1.jpg" alt="">
+    </div>
+    <button onclick="changeHeading();">Click Me</button>
+</body>
+</html>
