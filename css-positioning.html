@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      border: 2px solid #f81919;
+      padding: 20px;
+      margin: 20px;
+      position: relative; /* Parent container for absolute positioning */
+      height: 300px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .static {
+      background-color: #f44336;
+      position: static; /* Default position */
+    }
+
+    .relative {
+      background-color: #2196F3;
+      position: relative; /* Positioned relative to itself */
+      top: 20px;
+      left: 80px;
+    }
+
+    .absolute {
+      background-color: #4CAF50;
+      position: absolute; /* Positioned relative to the nearest positioned ancestor */
+      top: 100px;
+      left: 400px;
+    }
+
+    .fixed {
+      background-color: #FF9800;
+      position: fixed; /* Positioned relative to the viewport */
+      left: 0px;
+      bottom: 0px;
+    }
+
+    .sticky {
+      background-color: #9C27B0;
+      position: sticky; /* Sticks to the top when scrolling */
+      top: 0;
+      padding: 10px;
+      margin-bottom: 20px;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .content {
+      height: 1000px;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Positioning Demo</h1>
+  <p>This example shows different types of CSS positioning, including sticky.</p>
+
+  <div class="sticky">Sticky Header</div>
+
+  <div class="container">
+    <div class="box static">Static</div>
+    <div class="box relative">Relative</div>
+    <div class="box absolute">Absolute</div>
+  </div>
+
+  <div class="box fixed">Fixed</div>
+
+  <div class="content">
+    <p>Scroll down to see the sticky header in action. It will stay at the top of the viewport while scrolling this section.</p>
+  </div>
+</body>
+</html>
