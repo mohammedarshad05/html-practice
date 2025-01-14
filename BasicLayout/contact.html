@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>basic layout</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      width: 100vw;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1,
+    P {
+      font-variant: small-caps;
+      text-align: center;
+    }
+    header {
+      background-color: rgb(132, 121, 123);
+      width: 100vw;
+      padding: 20px;
+    }
+
+    nav,
+    a {
+      text-decoration: none;
+      margin: 0.1rem;
+      padding: 20px;
+      text-align: center;
+      background-color: beige;
+    }
+    nav a:hover {
+      font-weight: bold;
+    }
+
+    .icons-container {
+      border: 3px solid gray;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px black;
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .icons p{
+        margin: 0.1rem;
+        text-align: start;
+        font-size: large;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    footer{
+        background-color: brown;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        margin-top: 1em;
+    }
+  </style>
+
+  <body>
+    <header>
+      <h1>My First WebPage Layout</h1>
+      <p>designs and more content</p>
+    </header>
+
+    <nav>
+      <a href="main.html"> Home </a>
+      <a href="about.html"> About </a>
+      <a href="Service.html"> Services </a>
+      <a href="contact.html"> Contact </a>
+    </nav>
+
+    <div class="icons-container">
+      <div class="icons">
+        <p><i class="fa fa-id-card">: My ID Card</i></p>
+        <p><i class="fa fa-phone">: +91 8073777432</i></p>
+        <p><i class="fa fa-envelope">: arshad@gmail.com </i></p>
+        <p><i class="fa fa-instagram">: Ot.arsh </i></p>
+        <p><i class="fa fa-facebook">: mohammedarshad</i></p>
+        <p><i class="fa fa-youtube">: animxff </i></p>
+        <p><i class="fa fa-github">: mohammedarshad05</i></p>
+      </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+       </footer>
+
+       
+  </body>
+</html>
