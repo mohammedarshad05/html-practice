@@ -1,0 +1,53 @@
+<DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex wrap</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
+        width: 100vw;
+        background-color: beige;
+    }
+    .flex{
+        gap: 10px;
+        /* padding: 20px; */
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .flexitem {
+        background-color: brown;
+        padding: 10px;
+        width: 200px;
+        border-radius: 5px;
+        border: 2px solid black;
+
+    }
+</style>
+
+<body>
+    <h1>FlexBox Wrap</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellat molestiae, vero natus ipsam optio sed ad quas inventore aliquid. Harum laudantium voluptatibus ipsam consequatur asperiores rem possimus assumenda laboriosam?</p>
+    <div class="flex">
+
+        <div class="flexitem"> box 1</div>
+        <div class="flexitem"> box 2</div>
+        <div class="flexitem"> box 3</div>
+        <div class="flexitem"> box 4</div>
+        <div class="flexitem"> box 5</div>
+        <div class="flexitem"> box 6</div>
+        <div class="flexitem"> box 7</div>
+        <div class="flexitem"> box 8</div>
+        <div class="flexitem"> box 9</div>
+
+    </div>
+</body>
+
+</html>
