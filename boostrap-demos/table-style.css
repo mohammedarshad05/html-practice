@@ -1,0 +1,23 @@
+h1{
+    font-variant: small-caps;
+    text-align: center;
+  }
+  table {
+  width: 70vw;
+  border-collapse: collapse;
+
+}
+th, td {
+  border: 1px solid #101010;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color:white;
+}
+tr:nth-child(even) {
+  background-color: white;
+}
+tr:hover {
+  background-color: rgb(159, 222, 152);
+}
